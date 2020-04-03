@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{twocol-resume}
+
+\pagenumbering{gobble}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\namesection{Artem}{Chikin}{ \urlstyle{same}\url{http://artemchikin.com} \\
+\vspace{-5pt}
+\namesection{Artem}{Chikin}{
+  \href{mailto:artem@chikin.ca}{artem@chikin.ca} | 647.620.6590 | LinkedIn://
+\href{https://www.linkedin.com/in/artem-chikin-71a2b4127/}{\custombold{artemchikin}}
+| Github:// \href{https://github.com/artemcm}{\custombold{artemcm}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\subsection{UNIVERSITY OF ALBERTA}
+\descript{MSc in Computing Science}
+\location{Thesis: Compiler-Driven Performance on Heterogeneous Computing Platforms}
+\sectionseptiny
+
+\descript{BSc Specialization in Computing Science}
+\location{With Distinction}
+\vspace*{-3mm}
+\sectionsepsmall
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards}
+\custombold{Outstanding Thesis Award (MSc)} (2019)
+\\University of Alberta, Computing Science
+
+\href{https://www-01.ibm.com/ibm/cas/canada/awards/2018/studentOTY.jsp}{\custombold{Student of The Year}}(2018)
+\\IBM Center for Advanced Studies
+
+\custombold{Early Achievement Award (MSc)} (2017)
+\\University of Alberta, Computing Science
+\vspace*{-3mm}
+\sectionsepsmall
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TALKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lectures / Talks}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Substitute Lecturer for:
+  \\\hspace{-3mm}\location{CMPUT 229}: Computer Organization
+  \\\hspace{-3mm}and Architecture
+  \\\hspace{-3mm}University of Alberta, Fall 2017, 2018
+%  \vspace*{2mm}
+  \\\hspace{-3mm}\location{CMPUT 415}: Compiler Design
+  \\\hspace{-3mm}University of Alberta, Fall 2018
+%  \vspace*{2mm}
+\item ``Mapping OpenMP Parallelism to GPU
+  \\\hspace{-3mm}Grid Geometry``
+  \location{CASCON-CDP 2017}
+\item ``Symbolic Static Analysis to Generate\\\hspace{-3mm}More Efficient Code for
+  OpenMP \\\hspace{-3mm}Loop Nests in GPUs`` \\\hspace{-3mm}\location{CASCON-CDP 2018}
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PATENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Patents}
+\vspace{\topsep} %% Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item ``Hybrid Compute Device Selection
+     \\\hspace{-3mm}Analysis``
+     \\\hspace{-3mm}Patent: US20200073677A1
+     \\\hspace{-3mm}\custombold{A. Chikin}, J. N. Amaral, K. Ali and\\\hspace{-3mm}E.Tiotto
+\item ``Compiler for Restructuring Code\\\hspace{-3mm}Using Interation-Point Algebraic\\\hspace{-3mm}Difference
+     Analysis''
+     \\\hspace{-3mm}Patent: US10558441B2,
+     \\\hspace{-3mm}\custombold{A. Chikin}, T. Lloyd, J. N. Amaral and\\\hspace{-3mm}E. Tiotto
+\end{tightemize}
+\vspace*{-3mm}
+\sectionsepsmall
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Programming}
+\mbox{C++ \textbullet{}} \mbox{Swift \textbullet{}} \mbox{C \textbullet{}}
+\mbox{Python \textbullet} \mbox{OpenMP \textbullet{}}
+\mbox{CUDA \textbullet{}} \mbox{SYCL \textbullet{}} \mbox{OpenCL \textbullet{}}
+\mbox{Assembly \textbullet{}} \mbox{Java \textbullet{}}
+\mbox{\LaTeX}\\
+%\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-3mm}
+\sectionsepsmall
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\runsubsection{Apple}
+\descript{| Swift Compiler Engineer}
+\location{March 2020 – Present | Vancouver, BC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionseptiny
+
+\runsubsection{Intel}
+\descript{| Compiler Optimization Engineer}
+\location{January 2019 – February 2020 | Toronto, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed Control-Flow Optimizations on the FPGA High-Level Synthesis
+  \\\hspace{-3mm}OpenCL/HLS Compiler.
+\end{tightemize}
+\sectionseptiny
+
+\runsubsection{IBM}
+\descript{| Compiler Optimization Developer (Co-op)}
+\location{May 2015 – January 2017 | Markham, ON}
+\begin{tightemize}
+\item Developed for the high-level optimizing backend of the IBM XL
+  C/C++/Fortran \\\hspace{-3mm}compiler, addressing customer defects and
+  improving code infrastructure.
+\item Designed and implemented essential components of a new GPU code-generator
+  \\\hspace{-3mm}for the newly-introduced OpenMP 4 standard and
+  CUDA-Fortran.
+\item Co-designed and built a compiler Intermediate Representation (IR)
+  translator.
+\item Designed and developed GPU implementations of OpenMP data-sharing clauses.
+\end{tightemize}
+\vspace*{-1mm}
+\sectionseptiny
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research}
+\runsubsection{UNIVERSITY OF ALBERTA Systems Group}
+\descript{| Research Assistant}
+\location{January 2017 – December 2018 | Edmonton, AB}
+\\Worked with \textbf{\href{http://webdocs.cs.ualberta.ca/~amaral/}{Jos\'e Nelson
+    Amaral}}, performing research in the areas of compiler optimization aimed at
+heterogeneous computing systems. Co-supervised three undergraduate research
+projects. Produced 5 publications, 2 patents.
+\vspace*{2pt}
+
+\sectionseptiny
+\runsubsection{IBM Center for Advanced Studies}
+\descript{| Graduate Fellow}
+\location{January 2017 – December 2018 | Edmonton, AB}
+\\Conducted research in collaboration with IBM research and development
+teams on a project: ``Investigating Loop Transformations to Improve Performance
+of Applications in Heterogeneous High-Performance Computing Machines''.
+Contributed significant advancements to IBM compiler technology;
+helped guide future research directions.
+\sectionseptiny
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+\vspace{\topsep} %%Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item``Memory-access-aware safety and profitability analysis for transformation of
+\\\hspace{-3mm}accelerator-bound OpenMP loops''
+\\\hspace{-3mm}\location{ACM TACO}: Transactions on Architecture and Code
+Optimization, 2019
+\\\hspace{-3mm}\custombold{A. Chikin}, T. Lloyd,  J. N. Amaral, E. Tiotto and M.
+Usman
+\item``Toward an Analytical Performance Model to Select between GPU and CPU
+\\\hspace{-3mm}Execution'' HIPS 2019, May 20, Rio de Janeiro, Brazil
+\\\hspace{-3mm}\custombold{A. Chikin}, J. N. Amaral, K. Ali and E.Tiotto
+\item``OpenMP Code Offloading: Splitting GPU Kernels, Pipelining Communication
+\\\hspace{-3mm}and Computation, and Selecting Better Grid Geometries''
+\\\hspace{-3mm}WACCPD 2018, Nobember 11, Dallas, TX, USA
+\\\hspace{-3mm}\custombold{A. Chikin}, T. Gobran and J. N. Amaral
+\item``Automated GPU Grid Geometry Selection for OpenMP Kernels''
+\\\hspace{-3mm}WAMCA 2018, September 24-27th, Lyon, France
+\\\hspace{-3mm}T. Lloyd, \custombold{A. Chikin}, S. Kedia, D. Jain and J. N. Amaral
+\item``A Case for Better Integration of Host and Target Compilation When
+Using \\\hspace{-3mm}OpenCL for FPGAs'' FSP 2017, October 26th, Ghent, Belgium
+\\\hspace{-3mm}T. Lloyd, \custombold{A. Chikin}, E. Ochoa, K. Ali and J. N. Amaral
+\end{tightemize}
+\vspace*{-2mm}
+\sectionseptiny
+\end{minipage}
+\end{document}
